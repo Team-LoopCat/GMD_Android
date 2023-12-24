@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item_background"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_marginTop="15dp"
+    android:id="@+id/lay_item">
+
+    <ImageView
+        android:id="@+id/img_item_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_item_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0번 사물함"
+        android:fontFamily="@font/jua"
+        android:textSize="28sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/img_item_profile"
+        app:layout_constraintTop_toTopOf="@id/img_item_profile"
+        app:layout_constraintBottom_toBottomOf="@id/img_item_profile"/>
+
+    <TextView
+        android:id="@+id/text_item_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000 ㅇㅇㅇ"
+        android:fontFamily="@font/jua"
+        android:textSize="16sp"
+        android:textColor="#7D7D7D"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/text_item_box"
+        app:layout_constraintBottom_toBottomOf="@id/text_item_box"/>
+
+    <TextView
+        android:id="@+id/text_item_status"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:text="제출 안함"
+        android:fontFamily="@font/jua"
+        android:textSize="14sp"
+        android:textColor="#FF0000"
+        android:background="@drawable/no_submit"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
